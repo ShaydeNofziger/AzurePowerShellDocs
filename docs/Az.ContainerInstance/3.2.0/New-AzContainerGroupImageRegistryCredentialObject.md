@@ -1,0 +1,105 @@
+﻿---
+external help file: Az.ContainerInstance-help.xml
+Module Name: Az.ContainerInstance
+online version: https://learn.microsoft.com/powershell/module/az.ContainerInstance/new-AzContainerGroupImageRegistryCredentialObject
+schema: 2.0.0
+---
+
+# New-AzContainerGroupImageRegistryCredentialObject
+
+## SYNOPSIS
+Create a in-memory object for ImageRegistryCredential
+
+## SYNTAX
+
+```
+New-AzContainerGroupImageRegistryCredentialObject -Server <String> [-Password <SecureString>]
+ [-Username <String>] [-AcrIdentity <String>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Create a in-memory object for ImageRegistryCredential
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+New-AzContainerGroupImageRegistryCredentialObject -Server "myserver.com" -Username "username" -Password (ConvertTo-SecureString "******" -AsPlainText -Force)
+```
+
+## PARAMETERS
+
+### -Server
+The Docker image registry server without a protocol such as "http" and "https".
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Password
+The password for the private registry.
+
+```yaml
+Type: SecureString
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Username
+The username for the private registry.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AcrIdentity
+The identity with access to the ACR.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.ContainerInstance.Models.Api20221001Preview.ImageRegistryCredential
+## NOTES
+
+## RELATED LINKS
+
+[https://learn.microsoft.com/powershell/module/az.ContainerInstance/new-AzContainerGroupImageRegistryCredentialObject](https://learn.microsoft.com/powershell/module/az.ContainerInstance/new-AzContainerGroupImageRegistryCredentialObject)
+

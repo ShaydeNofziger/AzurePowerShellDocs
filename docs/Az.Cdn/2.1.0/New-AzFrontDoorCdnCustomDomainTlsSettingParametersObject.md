@@ -1,0 +1,107 @@
+﻿---
+external help file: Az.Cdn-help.xml
+Module Name: Az.Cdn
+online version: https://docs.microsoft.com/powershell/module/az.Cdn/new-AzFrontDoorCdnCustomDomainTlsSettingParametersObject
+schema: 2.0.0
+---
+
+# New-AzFrontDoorCdnCustomDomainTlsSettingParametersObject
+
+## SYNOPSIS
+Create an in-memory object for AFDDomainHttpsParameters.
+
+## SYNTAX
+
+```
+New-AzFrontDoorCdnCustomDomainTlsSettingParametersObject -CertificateType <AfdCertificateType>
+ [-MinimumTlsVersion <AfdMinimumTlsVersion>] [-Secret <IResourceReference>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Create an in-memory object for AFDDomainHttpsParameters.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+## PARAMETERS
+
+### -CertificateType
+Defines the source of the SSL certificate.
+
+```yaml
+Type: AfdCertificateType
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MinimumTlsVersion
+TLS protocol version that will be used for Https.
+
+```yaml
+Type: AfdMinimumTlsVersion
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Secret
+Resource reference to the secret.
+ie.
+subs/rg/profile/secret.
+To construct, see NOTES section for SECRET properties and create a hash table.
+
+```yaml
+Type: IResourceReference
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.Cdn.Models.Api20210601.AfdDomainHttpsParameters
+## NOTES
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
+
+SECRET \<IResourceReference\>: Resource reference to the secret.
+ie.
+subs/rg/profile/secret.
+  \[Id \<String\>\]: Resource ID.
+
+## RELATED LINKS
+
+[https://docs.microsoft.com/powershell/module/az.Cdn/new-AzFrontDoorCdnCustomDomainTlsSettingParametersObject](https://docs.microsoft.com/powershell/module/az.Cdn/new-AzFrontDoorCdnCustomDomainTlsSettingParametersObject)
+

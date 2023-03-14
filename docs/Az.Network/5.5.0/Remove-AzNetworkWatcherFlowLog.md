@@ -1,0 +1,312 @@
+﻿---
+external help file: Microsoft.Azure.PowerShell.Cmdlets.Network.dll-Help.xml
+Module Name: Az.Network
+online version: https://learn.microsoft.com/powershell/module/az.network/remove-aznetworkwatcherflowlog
+schema: 2.0.0
+---
+
+# Remove-AzNetworkWatcherFlowLog
+
+## SYNOPSIS
+Deletes the specified flow log resource.
+
+## SYNTAX
+
+### SetByName (Default)
+```
+Remove-AzNetworkWatcherFlowLog -NetworkWatcherName <String> -ResourceGroupName <String> -Name <String>
+ [-PassThru] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetByResource
+```
+Remove-AzNetworkWatcherFlowLog -NetworkWatcher <PSNetworkWatcher> -Name <String> [-PassThru] [-AsJob]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetByLocation
+```
+Remove-AzNetworkWatcherFlowLog -Location <String> -Name <String> [-PassThru] [-AsJob]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetByResourceId
+```
+Remove-AzNetworkWatcherFlowLog -ResourceId <String> [-PassThru] [-AsJob]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetByInputObject
+```
+Remove-AzNetworkWatcherFlowLog -InputObject <PSFlowLogResource> [-PassThru] [-AsJob]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Deletes the specified flow log resource.
+
+## EXAMPLES
+
+### Example 1
+```
+Remove-AzNetworkWatcherFlowLog -Location eastus -Name pstest
+```
+
+## PARAMETERS
+
+### -AsJob
+Run cmdlet in the background
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+The credentials, account, tenant, and subscription used for communication with Azure.
+
+```yaml
+Type: IAzureContextContainer
+Parameter Sets: (All)
+Aliases: AzContext, AzureRmContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Flow log object.
+
+```yaml
+Type: PSFlowLogResource
+Parameter Sets: SetByInputObject
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Location
+Location of the network watcher.
+
+```yaml
+Type: String
+Parameter Sets: SetByLocation
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+The flow log name.
+
+```yaml
+Type: String
+Parameter Sets: SetByName, SetByResource, SetByLocation
+Aliases: FlowLogName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NetworkWatcher
+The network watcher resource.
+
+```yaml
+Type: PSNetworkWatcher
+Parameter Sets: SetByResource
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -NetworkWatcherName
+The name of network watcher.
+
+```yaml
+Type: String
+Parameter Sets: SetByName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+{{ Fill PassThru Description }}
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+The name of the network watcher resource group.
+
+```yaml
+Type: String
+Parameter Sets: SetByName
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceId
+Resource ID.
+
+```yaml
+Type: String
+Parameter Sets: SetByResourceId
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Azure.Commands.Network.Models.PSNetworkWatcher
+### System.String
+### Microsoft.Azure.Commands.Network.Models.PSFlowLogResource
+## OUTPUTS
+
+### System.Boolean
+## NOTES
+
+## RELATED LINKS
+
+[New-AzNetworkWatcher]()
+
+[Get-AzNetworkWatcher]()
+
+[Remove-AzNetworkWatcher]()
+
+[Get-AzNetworkWatcherNextHop]()
+
+[Get-AzNetworkWatcherSecurityGroupView]()
+
+[Get-AzNetworkWatcherTopology]()
+
+[Start-AzNetworkWatcherResourceTroubleshooting]()
+
+[New-AzNetworkWatcherPacketCapture]()
+
+[New-AzPacketCaptureFilterConfig]()
+
+[Get-AzNetworkWatcherPacketCapture]()
+
+[Remove-AzNetworkWatcherPacketCapture]()
+
+[Stop-AzNetworkWatcherPacketCapture]()
+
+[New-AzNetworkWatcherProtocolConfiguration]()
+
+[Test-AzNetworkWatcherIPFlow]()
+
+[Test-AzNetworkWatcherConnectivity]()
+
+[Stop-AzNetworkWatcherConnectionMonitor]()
+
+[Start-AzNetworkWatcherConnectionMonitor]()
+
+[Set-AzNetworkWatcherConnectionMonitor]()
+
+[Set-AzNetworkWatcherConfigFlowLog]()
+
+[Remove-AzNetworkWatcherConnectionMonitor]()
+
+[New-AzNetworkWatcherConnectionMonitor]()
+
+[Get-AzNetworkWatcherTroubleshootingResult]()
+
+[Get-AzNetworkWatcherReachabilityReport]()
+
+[Get-AzNetworkWatcherReachabilityProvidersList]()
+
+[Get-AzNetworkWatcherFlowLogStatus]()
+
+[Get-AzNetworkWatcherConnectionMonitorReport]()
+
+[Get-AzNetworkWatcherConnectionMonitor]()
+
+[New-AzNetworkWatcherFlowLog]()
+
+[Set-AzNetworkWatcherFlowLog]()
+
+[Get-AzNetworkWatcherFlowLog]()
+
